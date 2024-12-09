@@ -66,9 +66,9 @@ The agent observes a state `(TimeScenario, TrafficLevel, MoneyLevel, Urgency)` a
 
 The reward is calculated based on the chosen action’s **time** and **cost**, weighted by **urgency**. The general form is:
 
-\[
+$$
 \text{Reward} = - \bigl( (A_{\text{time}} \times (1 + \text{Urgency})) \times \text{Time} + A_{\text{cost}} \times \text{Cost} \bigr)
-\]
+$$
 
 Where:
 - \( A_{\text{time}} \) and \( A_{\text{cost}} \) are scaling factors for time and cost.
@@ -80,18 +80,18 @@ Where:
 **Example:**
 - If \( A_{\text{time}} = 0.1 \) and \( A_{\text{cost}} = 0.01 \):
   - For Urgency = 0 (Not Urgent), Time = 30, Cost = 0:  
-    \[
+    $$
     \text{Reward} = -((0.1 \times (1+0)) \times 30 + 0.01 \times 0) = -(3 + 0) = -3.0
-    \]
+    $$
 
   - For Urgency = 2 (Very Urgent), Time = 30, Cost = 200:  
-    \[
+    $$
     \text{Reward} = -((0.1 \times (1+2)) \times 30 + 0.01 \times 200) 
     = -((0.1 \times 3) \times 30 + 2) 
     = -((0.3 \times 30) + 2) 
     = -(9 + 2) 
     = -11.0
-    \]
+    $$
 
 **Note:** The rewards are often negative because they represent penalties (time and cost). The goal in RL is to find a policy that minimizes these penalties (thus maximizing reward, which means making the reward “less negative”).
 
