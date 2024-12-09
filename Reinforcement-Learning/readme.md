@@ -123,6 +123,21 @@ The code includes visualizations to understand the learning process:
 - Action distribution histogram to see which actions are chosen frequently.
 - Policy and result comparisons for different test scenarios.
 
+The code includes visualizations to understand the learning process:
+
+### Distribution of Actions Chosen During Training
+![Distribution of Actions Chosen During Training](distribution_training.png)
+
+### Distribution of Best Actions Across States
+![Distribution of Best Actions Across States](distributionbest-actions.png)
+
+### Q-Table Heatmap
+![Q-Table Heatmap](q-table-heatmap.png)
+
+### Policy Visualization
+![Learned Policy](policies.png)
+
+
 ## Running the Code
 
 1. Install required libraries: `numpy`, `matplotlib`, `seaborn`, `tabulate`.
