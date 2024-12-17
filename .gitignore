@@ -1,0 +1,12 @@
+# ... existing rules ...
+venv/
+env/
+data/
+.venv/
+.env/
+.data/
+__pycache__/  
+
+*.pickle
+
+/CNN/*.pickle
