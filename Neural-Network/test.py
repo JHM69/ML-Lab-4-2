@@ -56,7 +56,7 @@ with open('model.pickle', 'rb') as file:
     network = pickle.load(file)
 
 # Get predictions from a PNG file
-image_path = 'j.png'  # Specify the path to your PNG file
+image_path = '8.png'  # Specify the path to your PNG file
 processed_image = preprocess_image(image_path)  # Preprocess the image
 
 test_output = processed_image
